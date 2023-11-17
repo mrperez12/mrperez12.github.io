@@ -140,33 +140,19 @@ html{
     display: flex;
 }
 .aboutme .row .col{
-    width: 50%;
+    width: 100%;
 }
 .aboutme .row .col h3{
     font-size: 28px;
     font-family: 'Rigtheous';
     margin-bottom: 25px;
-}
-.aboutme .row .col ul{
-    list-style: none;
-}
-.aboutme .row .col li{
-    margin: 12px 0;
-}
-.aboutme .row .col ul li strong{
-    display: inline-block;
-    color: #1cb698;
-    width: 130px;
-}
-.aboutme .row .col ul li span{
-    background-color: #1cb698;
-    padding: 3px;
-    font-weight: bold;
-    border-radius: 5px;
+    text-align: center;
 }
 .aboutme .row .col .container-hobbies{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 150px 0 150px;
 }
 .aboutme .row .col .container-hobbies .hobbies{
     width: 130px;
@@ -268,15 +254,15 @@ html{
 }
 .skills .skill .skill-bar span{
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-color: #1cb698;
     border-radius: 50px;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
-    top: -17px;
+    top: -13px;
     right: -15px;
-    font-size: 14px;
+    font-size: 0;
 }
 /* classes to be added dynamically with js*/
 .skills .skill .javascript{
@@ -285,7 +271,7 @@ html{
 }
 @keyframes javascript{
     0%{width: 0%;}
-    40%{width: 40%;}
+    100%{width: 40%;}
 }
 .skills .skill .python{
     width: 0%;
@@ -293,7 +279,7 @@ html{
 }
 @keyframes python{
     0%{width: 0%;}
-    40%{width: 75%;}
+    100%{width: 75%;}
 }
 .skills .skill .html{
     width: 0%;
@@ -301,7 +287,7 @@ html{
 }
 @keyframes html{
     0%{width: 0%;}
-    40%{width: 45%;}
+    100%{width: 45%;}
 }
 .skills .skill .css{
     width: 0%;
@@ -309,7 +295,7 @@ html{
 }
 @keyframes css{
     0%{width: 0%;}
-    40%{width: 30%;}
+    100%{width: 30%;}
 }
 .skills .skill .django{
     width: 0%;
@@ -317,7 +303,7 @@ html{
 }
 @keyframes django{
     0%{width: 0%;}
-    40%{width: 40%;}
+    100%{width: 40%;}
 }
 .skills .skill .communication{
     width: 0%;
@@ -325,7 +311,7 @@ html{
 }
 @keyframes communication{
     0%{width: 0%;}
-    40%{width: 85%;}
+    100%{width: 85%;}
 }
 .skills .skill .dedication{
     width: 0%;
@@ -333,7 +319,7 @@ html{
 }
 @keyframes dedication{
     0%{width: 0%;}
-    40%{width: 80%;}
+    100%{width: 80%;}
 }
 .skills .skill .motivation{
     width: 0%;
@@ -341,7 +327,7 @@ html{
 }
 @keyframes motivation{
     0%{width: 0%;}
-    40%{width: 90%;}
+    100%{width: 90%;}
 }
 .skills .skill .teamwork{
     width: 0%;
@@ -349,7 +335,7 @@ html{
 }
 @keyframes teamwork{
     0%{width: 0%;}
-    40%{width: 100%;}
+    100%{width: 100%;}
 }
 .skills .skill .proyectManagment{
     width: 0%;
@@ -357,7 +343,7 @@ html{
 }
 @keyframes proyectManagment{
     0%{width: 0%;}
-    40%{width: 75%;}
+    100%{width: 75%;}
 }
 
 /*Curriculum*/
@@ -690,6 +676,31 @@ footer .up{
         width: 100%;
     }
     .skills .row .col .skill-bar{
+        width: 100%;
+    }
+    .curriculum .row{
+        display: block;
+    }
+    .curriculum .row .col{
+        width: 90%;
+    }
+    .curriculum .row .right{
+        margin-left: 20px;
+    }
+    .portfolio .gallery{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .gallery .proyect{
+        max-width: 100%;
+    }
+    .portfolio .gallery .proyect img{
+        width: 100%;
+    }
+    .contact .row{
+        display: block;
+    }
+    .contact .row .col{
         width: 100%;
     }
 }
